@@ -44,6 +44,8 @@ namespace soda_can_robots_can1
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -58,6 +60,7 @@ namespace soda_can_robots_can1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Image = global::soda_can_robots_can1.Properties.Resources.popcan_top_tex4;
             this.button1.Location = new System.Drawing.Point(12, 457);
             this.button1.Name = "button1";
@@ -180,7 +183,8 @@ namespace soda_can_robots_can1
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.SystemColors.Info;
             this.button3.Image = global::soda_can_robots_can1.Properties.Resources.metalfloor007b;
             this.button3.Location = new System.Drawing.Point(12, 363);
             this.button3.Name = "button3";
@@ -210,12 +214,41 @@ namespace soda_can_robots_can1
             this.pictureBox8.TabIndex = 16;
             this.pictureBox8.TabStop = false;
             // 
+            // button7
+            // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(345, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(290, 89);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "CLICK TO OPEN AWESOME SNIPPING TOOL! ";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.UpArrow;
+            this.button8.ForeColor = System.Drawing.SystemColors.Info;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(668, 12);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(84, 72);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "CLICK TO PLAY CHADMUSIC2";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // sOdacanBoTScaN1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::soda_can_robots_can1.Properties.Resources.Vortec_space;
             this.ClientSize = new System.Drawing.Size(1034, 639);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button6);
@@ -261,6 +294,8 @@ namespace soda_can_robots_can1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 

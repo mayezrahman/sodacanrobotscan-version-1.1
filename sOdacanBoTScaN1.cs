@@ -20,14 +20,9 @@ namespace soda_can_robots_can1
             if (File.Exists(@"C:\Users\mayez\Documents\superdupertest.txt"))
             {
                 File.Delete(@"C:\Users\mayez\Documents\superdupertest.txt");
+                File.WriteAllText("C:\\Users\\mayez\\Documents", String.Empty);
             }
         }
-
-        private void timer1_tick(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player =
@@ -52,7 +47,12 @@ new System.Media.SoundPlayer();
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            string text = "DATE TIME PLACE COORDINATES? L+RATIO+MADCUZBAD+FAT+NEEKYNOMATES+FAT+GENSHIN IMPACT PLAYER";
+            System.Media.SoundPlayer player =
+new System.Media.SoundPlayer();
+            player.SoundLocation = @"A:\hl2_beta_2001-2003\hl2\sound\hgrunt\hundredmeters.WAV";
+            player.Load();
+            player.Play();
+            string text = "DATE TIME PLACE COORDINATES? L+RATIO+MADCUZBAD+FAT+NERD+FAT+GENSHIN IMPACT PLAYER+STUPID";
             MessageBox.Show(text);
         }
 
@@ -75,6 +75,20 @@ new System.Media.SoundPlayer();
             System.Media.SoundPlayer player =
 new System.Media.SoundPlayer();
             player.SoundLocation = @"A:\Refraction 0.3.0\epicsong1.wav";
+            player.Load();
+            player.Play();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Process.Start("SnippingTool");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player =
+new System.Media.SoundPlayer();
+            player.SoundLocation = @"A:\Brokenmachine Video\arabfunny3.wav";
             player.Load();
             player.Play();
         }

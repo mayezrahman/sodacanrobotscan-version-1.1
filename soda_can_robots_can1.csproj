@@ -4,6 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>soda_can_robots_can1.Program</StartupObject>
+    <ApplicationIcon>Android_robot_program_icon1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
